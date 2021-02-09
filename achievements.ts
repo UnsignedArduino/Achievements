@@ -1,6 +1,7 @@
 /**
  * A namespace that handles achievement getting, setting, remembering, and displaying!
  */
+//% color="#009900"
 namespace Achievements {
     /**
      * Check for an achievement. 
@@ -12,6 +13,9 @@ namespace Achievements {
      * @param icon: The icon of the achievement when shown to the player, must be 8x8 otherwise ignored.
      * @return: Returns a boolean depending on whether this is the first time the condition is true.
      */
+    //% block="check for achievement named $achievementName in condition $condition and display title as $displayName and description as $displayDescription and icon as $icon"
+    //% icon.shadow=screen_image_picker
+    //% weight=90
     export function checkForAchievement(achievementName: string, 
                                         condition: boolean = false, 
                                         displayName: string,
@@ -45,6 +49,9 @@ namespace Achievements {
      * @param displayDescription: The discription of the achievement that is shown to the player - optional.
      * @param icon: The icon of the achievement when shown to the player, must be 8x8 otherwise ignored.
      */
+    //% block="check for achievement named $achievementName in condition $condition and display title as $displayName and description as $displayDescription and icon as $icon"
+    //% icon.shadow=screen_image_picker
+    //% weight=100
     export function checkForAchievementNoReturn(achievementName: string, 
                                                 condition: boolean = false, 
                                                 displayName: string,
@@ -56,6 +63,8 @@ namespace Achievements {
      * Reset an achievement.
      * @param achievementName: The name of the achievement that is used internally, does nothing if not found.
      */
+    //% block="reset achievement named $achievementName"
+    //% weight=80
     export function resetAchievement(achievementName: string) {
         achievementName = "achievement_" + achievementName
         if (blockSettings.exists(achievementName) && blockSettings.readNumber(achievementName) == 1) {
@@ -65,6 +74,8 @@ namespace Achievements {
     /**
      * Reset all achievements.
      */
+    //% block="reset all achievements"
+    //% weight=70
     export function resetAllAchievements() {
         function startsWith(startString: string, search: string, rawPos?: number) {
             let pos = rawPos > 0 ? rawPos|0 : 0;
