@@ -1,0 +1,27 @@
+{
+    "name": "Achievements",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "Notifications": "github:unsignedarduino/notifications#97135c2727b7ba8e216afd9283f04fc4a624b9ff",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "achievements.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.3.44",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj"
+}
