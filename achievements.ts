@@ -37,6 +37,22 @@ namespace Achievements {
         return false
     }
     /**
+     * Check for an achievement. 
+     * @param achievementName: The name of the achievement that is used internally.
+     * @param condition: Whether the achievement conditions are true, could be the result of a 
+     *   function or whether a number is greater than some other number.
+     * @param displayName: The name of the achievement that is shown to the player.
+     * @param displayDescription: The discription of the achievement that is shown to the player - optional.
+     * @param icon: The icon of the achievement when shown to the player, must be 8x8 otherwise ignored.
+     */
+    export function checkForAchievementNoReturn(achievementName: string, 
+                                                condition: boolean = false, 
+                                                displayName: string,
+                                                displayDescription: string = "",
+                                                icon?: Image) {
+        checkForAchievement(achievementName, condition, displayName, displayDescription, icon)
+    }
+    /**
      * Reset an achievement.
      * @param achievementName: The name of the achievement that is used internally, does nothing if not found.
      */
