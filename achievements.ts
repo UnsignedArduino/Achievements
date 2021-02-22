@@ -35,6 +35,7 @@ namespace Achievements {
         }
         if (value == 1 && blockSettings.readNumber(achievementName) == 0) {
             blockSettings.writeNumber(achievementName, 1)
+            Notification.waitForNotificationFinish()
             if (displayDescription == "") {
                 Notification.notify("Achievement get: " + displayName + "!", icon)
             } else {
