@@ -1,1 +1,18 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="@CV3U1dWxXHt^VQjt{g1">enemies_killed</variable></variables></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="(oJxsr8iD!ctI))5Nc!V" x="0" y="0"><statement name="HANDLER"><block type="Achievements_showAchievement" id="@Yg,uy(J+u]Rn{KVd6g)"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="displayName"><shadow type="text" id="@Xp?@%2paxsr0Sk#3GgO"><field name="TEXT">asdf</field></shadow></value><value name="displayDescription"><shadow type="text" id=",+ow%0(3KPkFjR16x/5O"><field name="TEXT">asdf!</field></shadow></value><value name="speed"><shadow type="math_number" id="Qf+qZyN;Ju#GQ@QVyPM9"><field name="NUM">0.5</field></shadow></value><value name="icon"><shadow type="screen_image_picker" id="lMw79^+1S[+yV9p=O__*"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value></block></statement></block></xml>

@@ -9,19 +9,20 @@ namespace Achievements {
      * @param displayDescription: The discription of the achievement that is shown to the player - optional.
      * @param icon: The icon of the achievement when shown to the player, must be 8x8 otherwise ignored.
      */
-    //% block="show achievement with title as $displayName||and description as $displayDescription|and icon as $icon"
+    //% block="show achievement with title as $displayName||and description as $displayDescription|at speed $speed|and icon as $icon"
     //% icon.shadow=screen_image_picker
+    //% speed.defl=1
     //% expandableArgumentMode="enabled"
     //% weight=90
-    export function showAchievement(displayName: string, displayDescription?: string, icon?: Image) {
+    export function showAchievement(displayName: string, displayDescription?: string, speed?: number, icon?: Image) {
         if (!(displayDescription)) {
             displayDescription = ""
         }
         Notification.waitForNotificationFinish()
         if (displayDescription == "") {
-            Notification.notify("Achievement get: " + displayName + "!", icon)
+            Notification.notify("Achievement get: " + displayName + "!", speed, icon)
         } else {
-            Notification.notify("Achievement get! " + displayName + ": " + displayDescription, icon)
+            Notification.notify("Achievement get! " + displayName + ": " + displayDescription, speed, icon)
         }
     }
     /**

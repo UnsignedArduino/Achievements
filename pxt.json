@@ -3,7 +3,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "Notifications": "github:unsignedarduino/notifications#2a1dfa1a8c4ecf02cfb8b53521f82371a222e3e5",
+        "Notifications": "github:unsignedarduino/notifications#aaf5aa6936ed796370ca1d224fabada798997269",
         "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
     },
     "files": [
